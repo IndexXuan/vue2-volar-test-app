@@ -8,6 +8,7 @@
         >vue-cli documentation</a
       >.
     </p>
+    <slot :item="{ msg }">slot content</slot>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -103,14 +104,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 
 export default Vue.extend({
-  name: "HelloWorld",
+  name: 'HelloWorld',
   props: {
     msg: String,
   },
-});
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
